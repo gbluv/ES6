@@ -6,6 +6,11 @@ export const object_inheritance = () =>  {
     }
   }
 
+  /**
+   * In this case Guitar Amp is our base class we extend it and add a new property
+   * called powerCord. Constructor super will actually mapy extended class's prototype
+   * to this class.
+   */
   class BaseAmp extends GuitarAmp{
     constructor(){
       super();
@@ -21,4 +26,3 @@ export const object_inheritance = () =>  {
 
 };
 
-export default object_inheritance;

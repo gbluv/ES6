@@ -1,6 +1,33 @@
-import object_inheritance from './lib/object_inheritance.js';
+import {
+  BaseAmp,
+  GuitarAmp
+} from './lib/inheritance/object_composition/copmosed_objects.js';
 
-console.log(object_inheritance());
+import pippedFunction from './lib/function_composition.js';
+
+console.log(pippedFunction(3));
+/*
+const baseAmp = new BaseAmp({lamps: 'alot'});
+const guitarAmp = new GuitarAmp();
+
+console.log(guitarAmp);
+
+console.log(Object.keys(baseAmp));
+
+
+import { reduce } from 'lodash/fp';
+
+const pipe = (...args ) => x => reduce((v,f) => f(v),x);
+
+const f1 = (arg) => arg * 2;
+const f2 = (arg) => arg * 3
+
+const result = pipe(f1,f2);
+console.log(result());   */
+
+
+
+
 
 //import {symbols} from './lib/symbols.js';
 //import BuiltInObjects from './lib/builtin_objects.js';
